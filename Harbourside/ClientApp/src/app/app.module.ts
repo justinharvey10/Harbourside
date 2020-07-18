@@ -14,6 +14,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import 'hammerjs';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { ContactComponent } from './contact/contact.component';
+import { PriceAvailabilityComponent } from './price-availability/price-availability.component';
 
 export class CustomHammerConfig extends HammerGestureConfig {
   overrides = {
@@ -28,7 +30,9 @@ export class CustomHammerConfig extends HammerGestureConfig {
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    ContactComponent,
+    PriceAvailabilityComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -36,7 +40,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'pricesavailability', component: PriceAvailabilityComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ]),
     BrowserAnimationsModule,

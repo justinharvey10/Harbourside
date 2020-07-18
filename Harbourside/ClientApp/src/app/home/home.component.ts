@@ -14,26 +14,23 @@ export class HomeComponent implements OnInit {
 
     this.galleryOptions = [
       {
-        width: '600px',
-        height: '400px',
+        width: '100%',
+        height: '1000px',
+        thumbnailsRows: 2,
         thumbnailsColumns: 4,
+        imagePercent: 70,
+        thumbnailsPercent: 30,
         imageAnimation: NgxGalleryAnimation.Slide
       },
-      // max-width 800
       {
-        breakpoint: 800,
+        breakpoint:400,
         width: '100%',
-        height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20,
-        lazyLoading:false
-      },
-      // max-width 400
-      {
-        breakpoint: 400,
-        preview: false
+        height: '500px',
+        thumbnailsRows: 2,
+        thumbnailsColumns: 4,
+        imagePercent: 70,
+        thumbnailsPercent: 30,
+        imageAnimation: NgxGalleryAnimation.Slide
       }
     ];
 
@@ -44,6 +41,16 @@ export class HomeComponent implements OnInit {
         big: 'assets/ViewFromPatioMiddle_Large.jpg'
       },
       {
+        small: 'assets/ViewWithFerry_Small.jpg',
+        medium: 'assets/ViewWithFerry_Medium.jpg',
+        big: 'assets/ViewWithFerry_Large.jpg'
+      },
+      {
+        small: 'assets/HouseFrontFromRight_Small.jpg',
+        medium: 'assets/HouseFrontFromRight_Medium.jpg',
+        big: 'assets/HouseFrontFromRight_Large.jpg'
+      },
+      {
         small: 'assets/HouseFront_Small.jpg',
         medium: 'assets/HouseFront_Medium.jpg',
         big: 'assets/HouseFront_Large.jpg'
@@ -52,6 +59,66 @@ export class HomeComponent implements OnInit {
         small: 'assets/HouseArial_Small.jpg',
         medium: 'assets/HouseArial_Medium.jpg',
         big: 'assets/HouseArial_Large.jpg'
+      },
+      {
+        small: 'assets/LivingRoomEnd.jpg',
+        medium: 'assets/LivingRoomEnd.jpg',
+        big: 'assets/LivingRoomEnd.jpg'
+      },
+      {
+        small: 'assets/LivingRoomLeft.jpg',
+        medium: 'assets/LivingRoomLeft.jpg',
+        big: 'assets/LivingRoomLeft.jpg'
+      },
+      {
+        small: 'assets/DiningAreaFromLivingRoom.jpg',
+        medium: 'assets/DiningAreaFromLivingRoom.jpg',
+        big: 'assets/DiningAreaFromLivingRoom.jpg'
+      },
+      {
+        small: 'assets/DiningArea.jpg',
+        medium: 'assets/DiningArea.jpg',
+        big: 'assets/DiningArea.jpg'
+      },
+      {
+        small: 'assets/Kitchen.jpg',
+        medium: 'assets/Kitchen.jpg',
+        big: 'assets/Kitchen.jpg'
+      },
+      {
+        small: 'assets/MasterBedroom.jpg',
+        medium: 'assets/MasterBedroom.jpg',
+        big: 'assets/MasterBedroom.jpg'
+      },
+      {
+        small: 'assets/MasterBedroom2.jpg',
+        medium: 'assets/MasterBedroom2.jpg',
+        big: 'assets/MasterBedroom2.jpg'
+      },
+      {
+        small: 'assets/TwinRoom.jpg',
+        medium: 'assets/TwinRoom.jpg',
+        big: 'assets/TwinRoom.jpg'
+      },
+      {
+        small: 'assets/TwinRoom2.jpg',
+        medium: 'assets/TwinRoom2.jpg',
+        big: 'assets/TwinRoom2.jpg'
+      },
+      {
+        small: 'assets/DoubleBedroom.jpg',
+        medium: 'assets/DoubleBedroom.jpg',
+        big: 'assets/DoubleBedroom.jpg'
+      },
+      {
+        small: 'assets/SingleRoom.jpg',
+        medium: 'assets/SingleRoom.jpg',
+        big: 'assets/SingleRoom.jpg'
+      },
+      {
+        small: 'assets/SingleRoom2.jpg',
+        medium: 'assets/SingleRoom2.jpg',
+        big: 'assets/SingleRoom2.jpg'
       }
     ];
   }
